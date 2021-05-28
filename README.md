@@ -1,6 +1,42 @@
-# Substrate based Product Barcode Scanner
+# PolkaScanner
 
-This substrate based pallet scans 2D barcode of the product which is tied to a Blockchain system.
+PolkaScanner is a mobile-friendly decentralized
+application (dApp) 2D barcode scanner for a Substrate-based
+blockchain, as part of A Fake Product Identification System.
+
+This dApp is based on some projects as mention bellow:
+
+
+### Substrate Barcode Scanner
+
+* Coded by @@ayushmishra2005 https://github.com/ayushmishra2005
+* Licensed under The Unlicense https://github.com/ayushmishra2005/substrate-barcode-scanner/blob/master/LICENSE
+
+
+### Substrate Barcode Scanner Pallet
+
+
+* Coded by @@ayushmishra2005 https://github.com/ayushmishra2005
+* Licensed under Apache License 2.0 (https://github.com/knoldus/substrate-barcode-scanner-pallet/blob/main/LICENSE)
+
+
+### Vue White Dashboard
+
+* Product Page: https://www.creative-tim.com/product/vue-white-dashboard
+* Copyright 2019 Creative Tim (https://www.creative-tim.com)
+* Licensed under MIT (https://github.com/creativetimofficial/vue-white-dashboard/blob/master/LICENSE.md)
+
+* Coded by Creative Tim
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+### POLKADASH
+
+* Author: Bruno Skvorc https://github.com/Swader/polkadash
+* Product Page: https://dotleap.com/
+* Licensed under MIT https://github.com/Swader/polkadash/blob/master/LICENSE.md
+
+=====================================================
 
 ## Getting Started
 
