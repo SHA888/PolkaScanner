@@ -7,11 +7,6 @@ blockchain, as part of A Fake Product Identification System.
 This dApp is based on some projects as mention bellow:
 
 
-### Substrate Barcode Scanner
-
-* Coded by @@ayushmishra2005 https://github.com/ayushmishra2005
-* Licensed under The Unlicense https://github.com/ayushmishra2005/substrate-barcode-scanner/blob/master/LICENSE
-
 
 ### Substrate Barcode Scanner Pallet
 
