@@ -1,10 +1,10 @@
 [package]
-authors = ['Ayush Kumar Mishra <https://github.com/ayushmishra2005>']
+authors = ['Rahul  <https://github.com/andropixels/polkadot-hackathon.git>']
 edition = '2018'
 description = 'Substrate based 2D barcode scanner pallet'
-license = 'Unlicense'
+license = 'Apache License 2.0'
 name = 'barcode-scanner-runtime'
-repository = 'https://github.com/ayushmishra2005/substrate-barcode-scanner'
+repository = 'https://github.com/andropixels/polkadot-hackathon.git'
 version = '2.0.1'
 
 [package.metadata.docs.rs]
