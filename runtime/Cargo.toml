@@ -70,6 +70,7 @@ runtime-benchmarks = [
     'pallet-timestamp/runtime-benchmarks',
     'sp-runtime/runtime-benchmarks',
     'pallet-barcode-scanner/runtime-benchmarks',
+
 ]
 std = [
     'codec/std',
@@ -84,6 +85,7 @@ std = [
     'pallet-randomness-collective-flip/std',
     'pallet-sudo/std',
     'pallet-barcode-scanner/std',
+     
     'barcode-scanner-runtime-api/std',
     'pallet-timestamp/std',
     'pallet-transaction-payment/std',

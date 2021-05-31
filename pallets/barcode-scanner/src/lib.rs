@@ -48,12 +48,14 @@ decl_event!(
         /// Product information has been shored.
         ProductInformationStored(AccountId, Hash),
     }
+
 );
 
 decl_error! {
     pub enum Error for Module<T: Config> {
         /// This barcode already exists in the chain.
         BarcodeAlreadyExists,
+       
     }
 }
 
@@ -69,8 +71,8 @@ decl_module! {
         // Events must be initialized if they are used by the pallet.
         fn deposit_event() = default;
 
-        #[weight = T::WeightInfo::add_product()]
-        fn add_product(origin, barcode: T::Hash, name: Vec<u8>, id: T::Hash) -> DispatchResult {
+        #[weight = T::WeightInfo::add_vaccine()]
+        fn add_vaccine(origin, barcode: T::Hash, name: Vec<u8>, id: T::Hash) -> DispatchResult {
 
             // The dispatch origin of this call must be `ManufactureOrigin`.
             let sender = T::ManufactureOrigin::ensure_origin(origin)?;
@@ -92,6 +94,8 @@ decl_module! {
             // Return a successful DispatchResult
             Ok(())
         }
+
+     
     }
 }
 

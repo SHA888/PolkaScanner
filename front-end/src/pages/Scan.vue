@@ -3,14 +3,14 @@
     <card>
       <template slot="header">
         <h5 class="title">Scan Barcode</h5>
-        <p class="category">Scan your barcode here</p>
+        <p id="category">Scan your barcode here</p>
       </template>
       <div class="row">
         <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 col-xs-6">
           Placeholder
         </div>
       </div>
-    </card>
+    </card>          
   </div>
 </template>
 <script>
@@ -31,7 +31,23 @@ export default {
     signedBlock() {
       api.then((api) => {
         api.rpc.chain.getBlock().then((block) => {
-          this.signedBlock = this.signedBlock.block.extrinsics.forEach();
+    
+
+         
+
+// Retrieve the chain name
+const chain =  api.rpc.system.chain();
+
+// Retrieve the latest header
+const lastHeader =  api.rpc.chain.getHeader();
+
+// Log the information
+console.log(`${chain}: last block #${lastHeader.number} has hash ${lastHeader.hash}`);
+                  
+                   document.getElementById("category").innerHTML = $;{lastHeader.hash};
+
+
+
         });
       });
     },

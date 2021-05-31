@@ -2,7 +2,6 @@
 authors = ['Rahul   <https://github.com/andropixels>']
 description = 'FRAME pallet for defining barcode scanner logic.'
 edition = '2018'
-license = 'Unlicense'
 name = 'pallet-barcode-scanner'
 repository = 'https://github.com/andropixels/polkadot-hackathon.git'
 version = '2.0.1'
