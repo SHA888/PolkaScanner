@@ -8,7 +8,9 @@ Only Manufacturer/ trusted authority are permitted to  add vaccines barcode and 
 if a individual wants  to verify if  a vaccine is original or counterfeited they can visit the dapp  and  scan the barcode on the vaccine 
 and verify the validity for the vaccine 
 
-Demo -https://youtu.be/fZFkptoubRw
+
+
+Demo-https://youtu.be/fZFkptoubRw
 
 
 
