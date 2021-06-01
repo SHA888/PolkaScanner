@@ -39,7 +39,15 @@ Demo -https://youtu.be/fZFkptoubRw
 =====================================================
 
 ## Getting Started
-
+ ## Running Front-end 
+    
+     cd front-end 
+     yarn serve 
+      
+    ## now front end is running at localhost:8080
+ 
+ 
+ 
 ### Rust Setup
 
 Follow the [Rust setup instructions](./doc/rust-setup.md) before using the included Makefile to
