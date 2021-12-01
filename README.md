@@ -1,23 +1,25 @@
-# PolkaScanner
+# Vaccine supply chain
 
-PolkaScanner is a mobile-friendly decentralized
-application (dApp) 2D barcode scanner for a Substrate-based
-blockchain, as part of A Fake Product Identification System.
-
-This dApp is based on some projects as mention bellow:
-
-
-### Substrate Barcode Scanner
-
-* Coded by @@ayushmishra2005 https://github.com/ayushmishra2005
-* Licensed under The Unlicense https://github.com/ayushmishra2005/substrate-barcode-scanner/blob/master/LICENSE
+ An  IoT + Blockchain Based solution to avoide any counterfeit and create transperancy in vaccine distrubution.
+we have used substrate(version 2.0.0) for the project and  vue.js for front-end.
+it has a one pallet- barcode scanner 
+which  has a callable  function add_vaccine which will be called  when manufacuturer wants to add the details about vaccines 
+Only Manufacturer/ trusted authority are permitted to  add vaccines barcode and other details on the blockchain 
+if a individual wants  to verify if  a vaccine is original or counterfeited they can visit the dapp  and  scan the barcode on the vaccine 
+and verify the validity for the vaccine 
 
 
-### Substrate Barcode Scanner Pallet
+
+Demo-https://youtu.be/fZFkptoubRw
 
 
-* Coded by @@ayushmishra2005 https://github.com/ayushmishra2005
-* Licensed under Apache License 2.0 (https://github.com/knoldus/substrate-barcode-scanner-pallet/blob/main/LICENSE)
+
+
+
+
+
+
+
 
 
 ### Vue White Dashboard
@@ -39,7 +41,15 @@ This dApp is based on some projects as mention bellow:
 =====================================================
 
 ## Getting Started
-
+ ## Running Front-end 
+    
+     cd front-end 
+     yarn serve 
+      
+    ## now front end is running at localhost:8080
+ 
+ 
+ 
 ### Rust Setup
 
 Follow the [Rust setup instructions](./doc/rust-setup.md) before using the included Makefile to

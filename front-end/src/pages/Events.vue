@@ -2,17 +2,12 @@
   <div class="content">
     <card>
       <template slot="header">
-        <h5 class="title">Events</h5>
-        <p class="category">Outputs the events as they come in</p>
+        <h5 class="title">Existing list</h5>
+        <p class="category">vaccines hash  </p>
       </template>
       <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 col-xs-6">
-          <card v-for="(event, block) in events">
-            {{ block }}
-            <p v-for="e in event">
-              {{ e }}
-            </p>
-          </card>
+        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 col-xs-6">
+          {{ blocknumber }}
         </div>
       </div>
     </card>
@@ -29,42 +24,28 @@ export default {
   },
   data() {
     return {
-      events: {},
-      unsub: null
+      blocknumber: 0,
+      events: [],
     };
   },
   methods: {
-    subscribe: async function() {
-      let myapi = await api;
-      
-      myapi.query.system.events(async (events) => {
-        let header = await myapi.rpc.chain.getHeader();
-        let blockNumber = header.toJSON.number;
+    getBlockNumber() {
 
-        let eventArray = [];
+const lastHeader =  api.rpc.chain.getHeader();
+this.blocknumber=lastHeader.hash;
 
-        console.log(`Received ${events.length} events: `);
 
-        events.forEach((record) => {
-          const {event, phase} = record;
-          eventArray.push(`${event.section}: ${event.method}:: (phase=${phase.toString()}`);
-        });
-        this.$set(this.events, blockNumber, eventArray);
-      }).then((_unsub) => (this.unsub = _unsub));
+
+      // api.then((api) => {
+      //   api.rpc.chain.getBlock().then((block) => {
+      //     this.blocknumber = api.rpc.chain.getHeader();
+      //   });
+      // });
     },
-    unsubscribe: function() {
-      if(this.unsub) {
-        this.unsub();
-        console.log("Unsubbed");
-      }
-    }
   },
   created() {
-    this.subscribe();
+    this.getBlockNumber();
   },
-  beforeDestroy() {
-    this.unsubscribe();
-  }
 };
 </script>
 <style></style>

@@ -7,13 +7,30 @@ import Home from "@/pages/Home.vue";
 import Events from "@/pages/Events.vue";
 import Upload from "@/pages/Upload.vue";
 import Scan from "@/pages/Scan.vue"
-;
+import login from "@/pages/login.vue";
+import  DistributersLogin from "@/pages/DistributersLogin.vue"
+
+
 const routes = [
   {
     path: "/",
     component: DashboardLayout,
     redirect: "home",
     children: [
+
+      {
+            
+        path: "DistributersLogin",
+        name: "DistributersLogin",
+        component:DistributersLogin,
+      },
+      {
+            
+        path: '/',
+    name: 'login',
+component:login,
+
+      },
       {
         path: "home",
         name: "Home",

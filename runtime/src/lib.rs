@@ -285,6 +285,7 @@ construct_runtime!(
         Sudo: pallet_sudo::{Pallet, Call, Config<T>, Storage, Event<T>},
         // Include the custom logic from the template pallet in the runtime.
         BarcodeScanner: pallet_barcode_scanner::{Pallet, Call, Storage, Event<T>},
+        
     }
 );
 
@@ -486,6 +487,9 @@ impl_runtime_apis! {
             add_benchmark!(params, batches, pallet_balances, Balances);
             add_benchmark!(params, batches, pallet_timestamp, Timestamp);
             add_benchmark!(params, batches, pallet_barcode_scanner, BarcodeScanner);
+            add_benchmark!(params, batches, pallet_validate_barcode, Validatebarcode);
+
+
 
             if batches.is_empty() { return Err("Benchmark not found for this pallet.".into()) }
             Ok(batches)

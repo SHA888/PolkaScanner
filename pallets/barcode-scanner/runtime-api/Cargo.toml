@@ -1,5 +1,5 @@
 [package]
-authors = ['Ayush Mishra <ayushmishra2005@gmail.com>']
+authors = ['Rahul <https://github.com/andropixels>']
 description = 'Runtime API for Substrate based 2D barcode scanner pallet'
 edition = '2018'
 license = "Apache-2.0"

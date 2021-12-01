@@ -2,12 +2,49 @@
   <div class="content">
     <card>
       <template slot="header">
-        <h5 class="title">Upload Barcode</h5>
-        <p class="category">Upload your barcode here</p>
+         <div class="vue-tempalte">
+        <form>
+            <h3> MANUFACTURER LOG IN </h3>
+
+            <div class="form-group">
+                  <label>Email address</label>
+                <input type="email" class="form-control form-control-lg" />
+            </div>
+
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" class="form-control form-control-lg" />
+            </div>
+
+   
+
+        <button type="submit" class="btn btn-dark btn-lg btn-block" 
+            >     
+          <a  href="https://polkadot.js.org/apps/#/explorer?rpc=ws://127.0.0.1:9944"> 
+                     sign in
+                  </a></button>
+  
+
+
+
+            <p class="forgot-password text-right mt-2 mb-4">
+                <!-- <router-link to="/forgot-password">Forgot password ?</router-link> -->
+            </p>
+
+            <div class="social-icons">
+                <ul>
+                    <li><a href="#"><i class="fa fa-google"></i></a></li>
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                </ul>
+            </div>
+
+        </form>
+    </div>
       </template>
       <div class="row">
         <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 col-xs-6">
-          Placeholder
+
         </div>
       </div>
     </card>

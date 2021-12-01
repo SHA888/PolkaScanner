@@ -11,7 +11,7 @@ fn check_product_storage() {
         let barcode = create_hash_data(&1u32);
         let id = create_hash_data(&2u32);
         let owner: u64 = 6;
-        assert_ok!(TemplateModule::add_product(
+        assert_ok!(TemplateModule::add_vaccine(
             Origin::signed(owner),
             barcode.clone(),
             "TEST".encode(),
